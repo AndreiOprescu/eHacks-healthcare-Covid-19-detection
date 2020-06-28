@@ -6,7 +6,7 @@ app = Flask('app')
 @app.route('/')
 def scan():
   return render_template("scan.html")
-######test not going in real code######
+####################################
 @app.route('/result', methods = ["GET",'POST'])  
 def success():  
     if request.method == 'POST':  
